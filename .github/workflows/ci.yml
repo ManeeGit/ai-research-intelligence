@@ -1,0 +1,27 @@
+name: Research Agent CI
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Unit, integration, and security tests
+        run: python -m unittest discover -s tests -v
+      - name: Offline end-to-end demo and evaluation
+        run: |
+          python -m research_agent demo
+          python -m research_agent evaluate
+          python -m research_agent watch --cycles 1
+          python -m compileall -q research_agent tests
+      - name: JavaScript syntax
+        run: node --check research_agent/static/app.js
