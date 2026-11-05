@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-research-intelligence"
+version = "0.1.0"
+description = "Local-first research intelligence with verifiable citations and bounded agents"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "AI Research Intelligence contributors"}]
+dependencies = []
+
+[project.scripts]
+research-agent = "research_agent.cli:main"
+
+[tool.setuptools.package-data]
+research_agent = ["fixtures/*.json", "static/*.html", "static/*.css", "static/*.js"]
+
+[tool.setuptools.packages.find]
+include = ["research_agent*"]

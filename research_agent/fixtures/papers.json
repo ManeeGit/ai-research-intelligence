@@ -1,0 +1,149 @@
+{
+  "notice": "All records are fictional synthetic fixtures, not real publications or research results.",
+  "papers": [
+    {
+      "external_id": "demo-rag-evidence",
+      "title": "Evidence Windows for Retrieval-Augmented Generation",
+      "abstract": "Retrieval-augmented generation connects generated answers to passages retrieved from a document collection. In this synthetic experiment, preserving exact evidence windows makes citation verification possible without trusting a language model. The demonstration does not establish performance on a real benchmark.",
+      "authors": [
+        "Synthetic Research Collective"
+      ],
+      "published": "2026-11-04T09:00:00+00:00",
+      "url": "https://research.example.invalid/papers/rag-evidence",
+      "source": "synthetic-demo",
+      "synthetic": true
+    },
+    {
+      "external_id": "demo-agent-budget",
+      "title": "Budgeted Tool Use for Research Agents",
+      "abstract": "Research agents can enforce a fixed tool-call budget and stop when their evidence is insufficient. A bounded research agent records each allowed source request before making a network call. This fictional study illustrates failure containment rather than reporting measured agent performance.",
+      "authors": [
+        "Synthetic Research Collective"
+      ],
+      "published": "2026-11-03T09:00:00+00:00",
+      "url": "https://research.example.invalid/papers/agent-budget",
+      "source": "synthetic-demo",
+      "synthetic": true
+    },
+    {
+      "external_id": "demo-citation-check",
+      "title": "Citation Integrity Through Content Hashes",
+      "abstract": "Citation integrity can be checked by comparing an exact quote and character offsets against a stored source abstract. A content hash detects when an indexed source has changed since an answer was generated. These synthetic examples verify quotation provenance but cannot determine whether a scientific claim is true.",
+      "authors": [
+        "Synthetic Research Collective"
+      ],
+      "published": "2026-11-02T09:00:00+00:00",
+      "url": "https://research.example.invalid/papers/citation-check",
+      "source": "synthetic-demo",
+      "synthetic": true
+    },
+    {
+      "external_id": "demo-local-quant",
+      "title": "Small Quantized Models for Local Evidence Selection",
+      "abstract": "Local inference with a small quantized model can select evidence identifiers while keeping source text on the device. The system retains exact excerpts instead of accepting unsupported model-generated claims. Memory usage depends on model size, context length, and the local runtime; this fictional example contains no measured speed or accuracy result.",
+      "authors": [
+        "Synthetic Research Collective"
+      ],
+      "published": "2026-11-01T09:00:00+00:00",
+      "url": "https://research.example.invalid/papers/local-quant",
+      "source": "synthetic-demo",
+      "synthetic": true
+    },
+    {
+      "external_id": "demo-prompt-injection",
+      "title": "Separating Retrieved Content from Agent Instructions",
+      "abstract": "Prompt injection in retrieved documents attempts to make an agent treat source text as instructions. A safe research pipeline treats retrieved passages as untrusted data and gives the answer model no tool execution privileges. Output validation must reject invented evidence identifiers even when the source asks the model to use them.",
+      "authors": [
+        "Synthetic Research Collective"
+      ],
+      "published": "2026-11-04T09:00:00+00:00",
+      "url": "https://research.example.invalid/papers/prompt-injection",
+      "source": "synthetic-demo",
+      "synthetic": true
+    },
+    {
+      "external_id": "demo-eval-abstain",
+      "title": "Abstention Tests for Research Question Answering",
+      "abstract": "Evaluation for research question answering should include questions with no supporting evidence. An abstention test checks that a system returns insufficient evidence instead of producing an unsupported answer. Lexical retrieval still needs separate tests for synonyms, contradictory claims, and misleading partial matches.",
+      "authors": [
+        "Synthetic Research Collective"
+      ],
+      "published": "2026-11-03T09:00:00+00:00",
+      "url": "https://research.example.invalid/papers/eval-abstain",
+      "source": "synthetic-demo",
+      "synthetic": true
+    },
+    {
+      "external_id": "demo-private-index",
+      "title": "Local-First Indexing for Private Research Workflows",
+      "abstract": "A local-first research index stores abstracts and generated briefs on the user device by default. Privacy boundaries require explicit approval before a configured public source is queried or a local model is contacted. Disabling query logs reduces retained question data but does not encrypt the database or protect a compromised device.",
+      "authors": [
+        "Synthetic Research Collective"
+      ],
+      "published": "2026-11-02T09:00:00+00:00",
+      "url": "https://research.example.invalid/papers/private-index",
+      "source": "synthetic-demo",
+      "synthetic": true
+    },
+    {
+      "external_id": "demo-drift-alert",
+      "title": "Source Version Drift in Literature Monitoring",
+      "abstract": "Literature monitoring should distinguish a new paper from a changed version of an existing paper. Stable source identifiers deduplicate repeated ingestion, while content hashes reveal updated abstracts. This synthetic source-version example does not claim that every metadata update changes a scientific conclusion.",
+      "authors": [
+        "Synthetic Research Collective"
+      ],
+      "published": "2026-11-01T09:00:00+00:00",
+      "url": "https://research.example.invalid/papers/drift-alert",
+      "source": "synthetic-demo",
+      "synthetic": true
+    },
+    {
+      "external_id": "demo-daily-brief",
+      "title": "Evidence-Preserving Daily Research Briefs",
+      "abstract": "A daily research brief can summarize papers first seen or changed in a local index during a UTC day. The brief should distinguish its ingestion date from the original publication date and label incomplete abstract-only coverage. Selecting a small reading list avoids presenting every retrieved result as equally important.",
+      "authors": [
+        "Synthetic Research Collective"
+      ],
+      "published": "2026-11-04T09:00:00+00:00",
+      "url": "https://research.example.invalid/papers/daily-brief",
+      "source": "synthetic-demo",
+      "synthetic": true
+    },
+    {
+      "external_id": "demo-bm25-index",
+      "title": "Compact Lexical Retrieval on Small Research Collections",
+      "abstract": "BM25 lexical retrieval ranks documents using term frequency, inverse document frequency, and document length. A compact lexical index avoids a mandatory embedding model and can run on a memory-constrained laptop. Exact token matching may miss semantic equivalents, so a missing result is not evidence that no relevant research exists.",
+      "authors": [
+        "Synthetic Research Collective"
+      ],
+      "published": "2026-11-03T09:00:00+00:00",
+      "url": "https://research.example.invalid/papers/bm25-index",
+      "source": "synthetic-demo",
+      "synthetic": true
+    },
+    {
+      "external_id": "demo-schedule-guard",
+      "title": "Finite Schedulers for Personal Research Assistants",
+      "abstract": "A finite scheduler limits run count, minimum polling interval, and daily source requests. An exclusive process lock prevents overlapping watcher runs from duplicating ingestion work. A user must explicitly enable recurring scheduling, and failures should stop the run without silently retrying forever.",
+      "authors": [
+        "Synthetic Research Collective"
+      ],
+      "published": "2026-11-02T09:00:00+00:00",
+      "url": "https://research.example.invalid/papers/schedule-guard",
+      "source": "synthetic-demo",
+      "synthetic": true
+    },
+    {
+      "external_id": "demo-compare-methods",
+      "title": "Reading Contradictory Evaluation Results",
+      "abstract": "Contradictory evaluation results can reflect differences in dataset construction, baseline selection, and task definitions. A research assistant should preserve source evidence and identify uncertainty rather than merge incompatible claims into a confident conclusion. This synthetic reading guide recommends checking full papers before applying a reported result.",
+      "authors": [
+        "Synthetic Research Collective"
+      ],
+      "published": "2026-11-01T09:00:00+00:00",
+      "url": "https://research.example.invalid/papers/compare-methods",
+      "source": "synthetic-demo",
+      "synthetic": true
+    }
+  ]
+}

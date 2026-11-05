@@ -1,0 +1,11 @@
+{
+  "sources": [
+    {
+      "name": "arxiv-research-agents",
+      "query": "cat:cs.AI AND (all:retrieval OR all:agents)",
+      "enabled": false,
+      "max_results": 25,
+      "daily_request_limit": 8
+    }
+  ]
+}

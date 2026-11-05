@@ -1,0 +1,106 @@
+{
+  "scope": "Synthetic regression suite only; not a scientific quality or real-world accuracy benchmark.",
+  "cases": [
+    {
+      "id": "citation-provenance",
+      "passed": true,
+      "abstained": false,
+      "recall_at_3": true,
+      "citations_valid": true,
+      "citation_count": 2
+    },
+    {
+      "id": "rag-grounding",
+      "passed": true,
+      "abstained": false,
+      "recall_at_3": true,
+      "citations_valid": true,
+      "citation_count": 1
+    },
+    {
+      "id": "agent-budget",
+      "passed": true,
+      "abstained": false,
+      "recall_at_3": true,
+      "citations_valid": true,
+      "citation_count": 1
+    },
+    {
+      "id": "prompt-injection",
+      "passed": true,
+      "abstained": false,
+      "recall_at_3": true,
+      "citations_valid": true,
+      "citation_count": 1
+    },
+    {
+      "id": "small-local-model",
+      "passed": true,
+      "abstained": false,
+      "recall_at_3": true,
+      "citations_valid": true,
+      "citation_count": 2
+    },
+    {
+      "id": "abstention",
+      "passed": true,
+      "abstained": false,
+      "recall_at_3": true,
+      "citations_valid": true,
+      "citation_count": 1
+    },
+    {
+      "id": "version-drift",
+      "passed": true,
+      "abstained": false,
+      "recall_at_3": true,
+      "citations_valid": true,
+      "citation_count": 3
+    },
+    {
+      "id": "bm25",
+      "passed": true,
+      "abstained": false,
+      "recall_at_3": true,
+      "citations_valid": true,
+      "citation_count": 2
+    },
+    {
+      "id": "finite-schedules",
+      "passed": true,
+      "abstained": false,
+      "recall_at_3": true,
+      "citations_valid": true,
+      "citation_count": 1
+    },
+    {
+      "id": "unanswerable-physics",
+      "passed": true,
+      "abstained": true,
+      "recall_at_3": null,
+      "citations_valid": true,
+      "citation_count": 0
+    },
+    {
+      "id": "unanswerable-medicine",
+      "passed": true,
+      "abstained": true,
+      "recall_at_3": null,
+      "citations_valid": true,
+      "citation_count": 0
+    },
+    {
+      "id": "unanswerable-finance",
+      "passed": true,
+      "abstained": true,
+      "recall_at_3": null,
+      "citations_valid": true,
+      "citation_count": 0
+    }
+  ],
+  "passed": 12,
+  "total": 12,
+  "recall_at_3": 1.0,
+  "abstention_rate": 1.0,
+  "citation_validity": true
+}

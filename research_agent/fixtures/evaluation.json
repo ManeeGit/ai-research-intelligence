@@ -1,0 +1,74 @@
+{
+  "description": "Deterministic synthetic regression checks, not a real-world accuracy benchmark.",
+  "cases": [
+    {
+      "id": "citation-provenance",
+      "query": "How can exact citation quotes and offsets be verified?",
+      "expected_external_id": "demo-citation-check",
+      "expect_abstain": false
+    },
+    {
+      "id": "rag-grounding",
+      "query": "How does retrieval augmented generation use evidence?",
+      "expected_external_id": "demo-rag-evidence",
+      "expect_abstain": false
+    },
+    {
+      "id": "agent-budget",
+      "query": "How can a research agent enforce a tool budget?",
+      "expected_external_id": "demo-agent-budget",
+      "expect_abstain": false
+    },
+    {
+      "id": "prompt-injection",
+      "query": "What protects against prompt injection in retrieved documents?",
+      "expected_external_id": "demo-prompt-injection",
+      "expect_abstain": false
+    },
+    {
+      "id": "small-local-model",
+      "query": "How can small quantized models select evidence during local inference?",
+      "expected_external_id": "demo-local-quant",
+      "expect_abstain": false
+    },
+    {
+      "id": "abstention",
+      "query": "How should evaluation test abstention with insufficient evidence?",
+      "expected_external_id": "demo-eval-abstain",
+      "expect_abstain": false
+    },
+    {
+      "id": "version-drift",
+      "query": "How do stable source identifiers detect updated abstracts?",
+      "expected_external_id": "demo-drift-alert",
+      "expect_abstain": false
+    },
+    {
+      "id": "bm25",
+      "query": "How does BM25 lexical retrieval rank documents?",
+      "expected_external_id": "demo-bm25-index",
+      "expect_abstain": false
+    },
+    {
+      "id": "finite-schedules",
+      "query": "How do finite schedulers limit polling and requests?",
+      "expected_external_id": "demo-schedule-guard",
+      "expect_abstain": false
+    },
+    {
+      "id": "unanswerable-physics",
+      "query": "What is the Higgs boson mass in gigaelectronvolts?",
+      "expect_abstain": true
+    },
+    {
+      "id": "unanswerable-medicine",
+      "query": "What dosage of amoxicillin treats pneumonia?",
+      "expect_abstain": true
+    },
+    {
+      "id": "unanswerable-finance",
+      "query": "What was NVIDIA quarterly earnings revenue?",
+      "expect_abstain": true
+    }
+  ]
+}

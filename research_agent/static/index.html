@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A private research workspace with verifiable evidence, bounded agents, and no required cloud model.">
+  <title>Fieldnote · Research intelligence</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#overview"><span class="brand-mark">f.</span><span>fieldnote<span class="brand-sub">RESEARCH INTELLIGENCE</span></span></a>
+    <p class="nav-label">YOUR WORKSPACE</p>
+    <nav aria-label="Workspace"><a class="nav-link active" href="#overview"><span>◫</span> Overview</a><a class="nav-link" href="#ask"><span>⌕</span> Ask your library</a><a class="nav-link" href="#library"><span>▤</span> Paper library</a><a class="nav-link" href="#brief"><span>▧</span> Daily brief</a></nav>
+    <div class="sidebar-bottom"><div class="local-status"><i></i> Local-first workspace</div><p>No API key. No query logs.<br>Your evidence stays with you.</p><span class="version">FIELDNOTE / 0.1</span></div>
+  </aside>
+  <main>
+    <header class="topbar"><div class="breadcrumb">Workspace <span>/</span> <strong id="page-name">Overview</strong></div><div class="environment"><span class="status-dot"></span> OFFLINE-FIRST <span class="keyboard-label">⌘ LOCAL</span></div></header>
+    <div id="notice" class="notice" role="status">Loading your local index…</div>
+    <section id="overview" class="panel active" aria-labelledby="overview-title">
+      <div class="section-heading"><div><p class="eyebrow">LESS NOISE. MORE EVIDENCE.</p><h1 id="overview-title">Your research, in focus.</h1><p class="lede">A small, dependable place to follow ideas and find the source.</p></div><a class="button dark" href="#ask">Ask a question <span>↗</span></a></div>
+      <div class="metrics"><article><span class="metric-label">PAPERS INDEXED</span><strong id="paper-count">—</strong><span class="metric-detail">Deduplicated by source ID</span></article><article><span class="metric-label">SOURCE COLLECTIONS</span><strong id="source-count">—</strong><span class="metric-detail">Public sources, explicitly enabled</span></article><article><span class="metric-label">EVIDENCE CHECKS</span><strong class="metric-word">Always on<span class="tiny-check">✓</span></strong><span class="metric-detail">Exact quotes + content hashes</span></article></div>
+      <div class="overview-grid"><article class="feature-card"><span class="mini-label">THE RESEARCH LOOP</span><h2>Stay curious.<br>Keep the receipts.</h2><p>Find relevant passages, see what supports them, and know when the library cannot answer.</p><div class="pipeline"><span><b>01</b> Collect</span><i>→</i><span><b>02</b> Retrieve</span><i>→</i><span><b>03</b> Verify</span></div><a href="#ask" class="text-link">Explore your evidence <span>↗</span></a></article><article class="brief-teaser"><div class="card-top"><span class="mini-label">TODAY’S READING LIST</span><span class="line-icon">▧</span></div><h2>A brief worth reading.</h2><p>New and changed abstracts, source by source. Written locally, ready when you are.</p><div id="brief-preview" class="brief-preview"></div><a href="#brief" class="text-link">Open daily brief <span>→</span></a></article></div>
+      <div class="list-heading"><h2>From your library <span id="recent-label"></span></h2><a href="#library" class="text-link">View all papers →</a></div><div id="recent-papers" class="paper-list"></div>
+    </section>
+    <section id="ask" class="panel" aria-labelledby="ask-title" hidden>
+      <div class="section-heading"><div><p class="eyebrow">ANSWERS WITH A PAPER TRAIL</p><h1 id="ask-title">Ask your library.</h1><p class="lede">Exact excerpts. Traceable citations. Room for “not enough evidence.”</p></div></div>
+      <form id="ask-form" class="question-card"><label for="question">What are you exploring?</label><textarea id="question" maxlength="3000" rows="3" placeholder="How can a research agent verify citations and preserve evidence?" required></textarea><div class="question-footer"><span>Searches indexed abstracts only · no cloud model</span><div><button class="button subtle" id="cancel-answer" type="button" hidden>Cancel</button><button class="button dark" id="ask-button" type="submit">Find evidence <span>↗</span></button></div></div></form>
+      <div class="suggestions"><span>TRY A QUESTION</span><button data-question="How can exact citation quotes and offsets be verified?">Verify citations ↗</button><button data-question="What protects against prompt injection in retrieved documents?">Prompt injection ↗</button><button data-question="How can small quantized models select evidence during local inference?">Small local models ↗</button></div>
+      <div id="answer-results" aria-live="polite" class="answer-results"><div class="empty-state"><span>⌕</span><h2>Good questions start here.</h2><p>Your answer will contain source excerpts you can check, never invented references.</p></div></div>
+    </section>
+    <section id="library" class="panel" aria-labelledby="library-title" hidden>
+      <div class="section-heading"><div><p class="eyebrow">A COLLECTION YOU CAN TRACE</p><h1 id="library-title">Paper library.</h1><p class="lede">The first 100 records by publication date. Search and answers use the full index.</p></div><span class="pill">ABSTRACTS ONLY</span></div>
+      <div class="filter-bar"><label for="library-filter">Filter this view</label><input id="library-filter" type="search" placeholder="Title, topic, author…"><span id="filter-count"></span></div><div id="all-papers" class="paper-list"></div>
+    </section>
+    <section id="brief" class="panel" aria-labelledby="brief-title" hidden>
+      <div class="section-heading"><div><p class="eyebrow">A QUIETER WAY TO KEEP UP</p><h1 id="brief-title">Your daily brief.</h1><p class="lede">Records first seen or changed today in UTC, not necessarily published today.</p></div><button class="button dark" id="download-brief">Save Markdown ↓</button></div><div class="brief-meta"><span id="brief-date">—</span><span>LOCAL DOCUMENT</span><span>NO EXTERNAL DELIVERY</span></div><div id="daily-brief" class="brief-document"></div>
+    </section>
+    <footer><span>Built for thoughtful research, not unquestioned answers.</span><span>Abstract-only coverage · Verify full papers before relying on claims.</span></footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,53 @@
+{
+  "query": "How can exact citation quotes and offsets be verified?",
+  "status": "evidence_found",
+  "summary": "Relevant source excerpts. These are retrieval matches, not independently validated conclusions.",
+  "mode": "extractive",
+  "model_note": null,
+  "generated_at": "2026-11-05T01:06:46+00:00",
+  "citations": [
+    {
+      "id": "E1",
+      "paper_id": "fbba81d24570e8684aa2",
+      "title": "Citation Integrity Through Content Hashes",
+      "url": "https://research.example.invalid/papers/citation-check",
+      "source": "synthetic-demo",
+      "quote": "Citation integrity can be checked by comparing an exact quote and character offsets against a stored source abstract.",
+      "start": 0,
+      "end": 117,
+      "content_hash": "90b77769210da0939e0c3038e9d316751b0e5e95bbc93faf6d709092ce8a901c",
+      "synthetic": true,
+      "published": "2026-11-02T09:00:00+00:00",
+      "score": 4.7273,
+      "matched_terms": [
+        "citation",
+        "exact",
+        "offsets"
+      ]
+    },
+    {
+      "id": "E2",
+      "paper_id": "a3abcb685c121607a008",
+      "title": "Evidence Windows for Retrieval-Augmented Generation",
+      "url": "https://research.example.invalid/papers/rag-evidence",
+      "source": "synthetic-demo",
+      "quote": "In this synthetic experiment, preserving exact evidence windows makes citation verification possible without trusting a language model.",
+      "start": 108,
+      "end": 243,
+      "content_hash": "851d09a8145e01bc58d48164264d4ca645ec9b93fca4a380f42a38cd0f81d8dd",
+      "synthetic": true,
+      "published": "2026-11-04T09:00:00+00:00",
+      "score": 1.9968,
+      "matched_terms": [
+        "citation",
+        "exact"
+      ]
+    }
+  ],
+  "synthetic": true,
+  "limitations": [
+    "Abstract-only coverage; full papers were not read.",
+    "Lexical matching can miss synonyms and does not establish scientific validity.",
+    "Synthetic demo records are not real publications."
+  ]
+}
